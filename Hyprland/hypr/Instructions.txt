@@ -1,0 +1,8 @@
+Programs to install:
+	1. swww -> Changing wallpaper
+	2. waybar -> Top bar
+	3. nwg-look -> Changing apperance (similar to lxappearance)
+	4. cava -> Change the config file (file -> ~/.config/cava/config) withthe provided config file in this repo
+
+Applications to install:
+	1. Strawberry -> Mediaplayer
