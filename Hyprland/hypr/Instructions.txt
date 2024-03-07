@@ -2,7 +2,14 @@ Programs to install:
 	1. swww -> Changing wallpaper
 	2. waybar -> Top bar
 	3. nwg-look -> Changing apperance (similar to lxappearance)
-	4. cava -> Change the config file (file -> ~/.config/cava/config) withthe provided config file in this repo
+	4. Download yaru-icon-theme using: "pamac install yaru-icon-theme", then use nwg-look to change the theme of thunar
+	5. Download JetBrainsMono Font from AUR
+	6. cava -> Change the config file (file -> ~/.config/cava/config) with the provided config file in this repo
+	7. grim -> Take screenshot
 
 Applications to install:
 	1. Strawberry -> Mediaplayer
+		
+Issues:
+	1. If Alt+F1/F2/F3 is not working for controlling the volume output, check if amixer is present in /usr/bin/ or not. If is not present then download amixer and if amixer is not available to download, download something similar to amixer like pamixer and replace amixer with pamixer in the key binding section.
+	2. If bluetooth is not working, check if blueman is installed or not, if not, then install it using: pamac install blueman.

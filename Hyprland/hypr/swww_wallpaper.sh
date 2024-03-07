@@ -20,7 +20,7 @@ if [ -z "$1" ]
 then
 	break
 else
-	IMG_YELAN=$1
+	IMG=$1
 fi
 
 WALLPAPER="${DIR}/${IMG}.jpg"

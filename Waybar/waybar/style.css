@@ -8,7 +8,7 @@
     font-weight: bold;
     font-size: 14px;
     min-height: 0px;
-    /* margin-top: 2px;*/
+    margin-bottom: 0px;
 }
 
 window#waybar {
@@ -300,7 +300,7 @@ window#waybar.empty #window {
     background: inherit;
     border: none;
     color: #000A60;
-    margin-left: 0px;
+    margin-left: -8px;
 }
 
 #cpu {
@@ -333,9 +333,10 @@ window#waybar.empty #window {
     border-color: #00f0ff;
     margin-top: 5px;
     margin-bottom: 19px;
+    padding-top: 0px;
     padding-left: 5px;
     padding-right: 5px;
-    padding-bottom: 2px;
+    padding-bottom: 0px;
 }
 
 #tray {
@@ -359,6 +360,17 @@ window#waybar.empty #window {
     padding-left: 10px;
     margin-top: 3px;
     margin-bottom:3px;
+}
+
+#battery.charging {
+  background-color:           inherit;
+  color:                      #000A60;
+  padding-right: 0px;
+  animation-name:             blink;
+  animation-duration:         0.4s;
+  animation-timing-function:  linear;
+  animation-iteration-count:  infinite;
+  animation-direction:        alternate;
 }
 
 #battery.critical:not(.charging) {
