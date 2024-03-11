@@ -11,5 +11,13 @@ Applications to install:
 	1. Strawberry -> Mediaplayer
 		
 Issues:
-	1. If Alt+F1/F2/F3 is not working for controlling the volume output, check if amixer is present in /usr/bin/ or not. If is not present then download amixer and if amixer is not available to download, download something similar to amixer like pamixer and replace amixer with pamixer in the key binding section.
-	2. If bluetooth is not working, check if blueman is installed or not, if not, then install it using: pamac install blueman.
+	1. If Alt+F1/F2/F3 is not working for controlling the volume output, check if amixer is present in /usr/bin/ or not. If is not present then download amixer and if amixer is not available to download, download something similar to amixer like pamixer and replace amixer with pamixer in the key binding section of hyprland config.
+	2. If bluetooth is not working, check if blueman is installed or not, if not, then install it using: "pamac install blueman".
+
+Icons and Themes:
+	1. Install yaru icon theme using: "pamac search yaru" -> To search for the package, if available then download: "pamac install yaru-icon-theme"
+	2. Install catppuccin widgets themes using: "pamac search catppuccin-gtk" and download the theme you like. To see the screenshots of different widgets themes visit the catppuccin github
+	3. Install a modern cursor theme using: "pamac search bibata-cursor" and install using: "pamac install bibata-cursor-theme"
+
+	After installing your widgets, icons, and cursor themes, open nwg-look (GTK-Settings) to apply the themes.
+------------------------------------------------------ !! ENJOY !! ------------------------------------------------------
