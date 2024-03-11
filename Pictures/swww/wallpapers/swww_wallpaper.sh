@@ -1,0 +1,1 @@
+/home/retro/swww_wallpaper.sh
