@@ -1,14 +1,10 @@
-/* ############################################################################################################ */
-
 * {
-    border: None;
-    border-radius: 20px;
-    /*font-family: "NotoSans";*/
+    border: none;
+    border-radius: 7px;
     font-family: "JetBrainsMono Nerd Font Bold";
     font-weight: bold;
     font-size: 14px;
-    min-height: 0px;
-    margin-bottom: 0px;
+    min-height: 0;
 }
 
 window#waybar {
@@ -18,54 +14,47 @@ window#waybar {
 
 tooltip {
     background: #000000;
-    border-radius: 10px;
+    border-radius: 7px;
     border-width: 2.5px;
     border-style: solid;
     border-color: #8aadf4;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #workspaces button {
-    padding-right: 12px;
-    padding-left: 0px;
-    color: #000A60;
+    color: #ffffff;
     margin-right: 5px;
+    padding-right: 0px;
+    padding-left: 2px;
 }
 
 #workspaces button.active {
-    color: #000A60;
+    color: #f5a97f;
 }
 
 #workspaces button.focused {
-    color: #00f0ff;
+    color: #a6adc8;
     background: #eba0ac;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 #workspaces button.urgent {
     color: #11111b;
     background: #a6e3a1;
-    border-radius: 10px;
-    }
+    border-radius: 7px;
+}
 
 #workspaces button:hover {
-    background: inherit;
-    color: #fff700;
-    border-radius: 5px;
-    padding-left: 5px;
-    margin-right: 5px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 7px;
+    padding-left: 8px;
+    padding-right: 6px;
 }
 
-window#waybar.empty #window {
-    background-color: transparent;
-    border: None;
-}
-
-#taskbar.empty #taskbar {
-    background-color: transparent;
-    border: None;
-}
-
-#cava,
 #window,
 #clock,
 #battery,
@@ -75,6 +64,7 @@ window#waybar.empty #window {
 #bluetooth,
 #custom-notifications,
 #custom-updates,
+#custom-player,
 #workspaces,
 #tray,
 #memory,
@@ -82,303 +72,171 @@ window#waybar.empty #window {
 #backlight,
 
 #backlight {
-    background: inherit;
-    border: solid;
-    border-width: 1px;
-    border-color: #00f0ff;
     background: #000000;
     opacity: 1.0;
-    padding: 0px 8px;
-    margin-top: 2px;
-    margin-bottom: 3px;
-    border-radius: 25px;
+    padding: 1.5px 7px 1.5px 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 7px 7px 7px 7px;
     margin-right: 5px;
     margin-left: 5px;
 }
 
-#workspaces {
-    border: solid;
-    border-width: 1px;
-    border-color: #00F0FF;
-    background: #bfdeec;
-    border-radius: 20px;
-    margin-top: 6px;
-    padding-left: 12px;
-    padding-right: 0px;
-    margin-bottom: 20px;
+#custom-appmenu {
+    background: #000000;
+    border-radius: 7px;
     margin-left: 5px;
+    padding-right: 13px;
+    padding-left: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 7px;
 }
 
-#custom-music.Playing {
-    background: rgb(137, 180, 250);
-    background: radial-gradient(circle, rgba(137, 180, 250, 120) 0%, rgba(142, 179, 250, 120) 6%, rgba(148, 226, 213, 1) 14%, rgba(147, 178, 250, 1) 14%, rgba(155, 176, 249, 1) 18%, rgba(245, 194, 231, 1) 28%, rgba(158, 175, 249, 1) 28%, rgba(181, 170, 248, 1) 58%, rgba(205, 214, 244, 1) 69%, rgba(186, 169, 248, 1) 69%, rgba(195, 167, 247, 1) 72%, rgba(137, 220, 235, 1) 73%, rgba(198, 167, 247, 1) 78%, rgba(203, 166, 247, 1) 100%);
-    background-size: 400% 400%;
-    animation: gradient_f 9s cubic-bezier(.72, .39, .21, 1) infinite;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
-    font-weight: bold;
-    color: #fff;
+#taskbar {
+    background: #000000;
+    border-radius: 7px;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-#custom-music.Paused,
-#custom-music.Stopped {
-    background: #161925;
+#tray {
+    background: #2E3440;
+    border-radius: 7px;
+    margin-right: 7px;
+}
+
+#workspaces {
+    background: #000000;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding-right: 7px;
 }
 
 #window {
-    background: #bfdeec;
-    border: solid;
-    border-width: 1px;
-    border-color: #00f0ff;
-    border-radius: 20px;
-    color: #000A60;
-    margin-top: 5px;
-    margin-bottom: 21px;
+    background: #000000;
+    border-radius: 7px;
     margin-left: 0px;
-}
-
-#cava {
-    background: inherit;
-    border: solid;
-    border-width: 1px;
-    border-color: #00f0ff;
-    border-radius: 20px;
-    margin-top: 2px;
-    margin-bottom: 21px;
-    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #clock {
-    background: #bfdeec;
-    border: solid;
-    border-width: 1px;
-    border-color: #00f0ff;
-    color: #000000;
-    border-radius: 20px;
-    margin-bottom: 19px;
-    margin-top: 6px;
-}
-
-#network.disconnected {
-    background: #fc0303;
-    border: none;
-    border-radius: 4px;
-    color: #f9e2af;
-    margin-top: 0px;
-    margin-bottom: -1px;
+    color: #a6e3a1;
+    border-radius: 7px 7px 7px 7px;
+    margin-right: 3px;
+    margin-left: 3px;
+    padding-right: 3px;
 }
 
 #network {
-    background: inherit;
-    border: none;
-    color: #000A60;
-    margin-top: 4px;
-    margin-left: -7px;
-}
-
-#network.ethernet {
-    background: inherit;
-    border: none;
-    color: #000A60;
+    color: #f9e2af;
+    margin-right: 1px;
+    margin-left: -5px;
 }
 
 #custom-notifications {
     color: #f9e2af;
-    border-radius: 8px 8px 8px 8px;
-    margin-right: 5px;
-    margin-left : 5px;
-    padding-right: 2.5px;
-    padding-left: 5px;
+    border-radius: 7px 7px 7px 7px;
+    padding-left: 9px;
+    padding-right: 15px;
+    margin-left:  2px;
+    margin-right: 2px;
+
 }
 
 #custom-updates {
     color: #89b4fa;
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 7px 7px 7px 7px;
     border-left:  0px;
     border-right: 0px;
-    margin-left:  5px;
-    margin-right: 0px;
-}
-
-#custom-appmenu {
-    background: #bfdeec;
-    border: solid;
-    border-width: 1px;
-    border-color: #111270;
-    color: #268FFF;
-    font-size: 18px;
-    border-radius: 20px;
-    
-    padding-left: 9px;
-    padding-right: 15px;
-    
-    margin-top: 5px;
-    margin-bottom: 19px;
-    margin-left: 5px;
-}
-
-#taskbar {
-    background: #bfdeec;
-    border: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    border-color: #00f0ff;
-    color: #a6e3a1;
-    margin-left: 5px;
-    margin-top: 6px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#audio {
-    background: inherit;
-    border: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    border-color: #00f0ff;
-    color: #a6e3a1;
-    margin-left: 5px;
-    margin-top: 10px;
-    margin-bottom:3px;
+    margin-left:  2px;
+    margin-right: 2px;
 }
 
 #custom-media {
-    background: #bfdeec;
-    border: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    border-color: #0112AA;
-    color: #020E7D;
-    margin-left: 5px;
+    background: #000000;
+    border-radius: 7px;
     margin-top: 5px;
-    margin-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 7px;
     padding-top: 3px;
-    /*padding-bottom: 0px;*/
 }
 
+#custom-player {
+ color: #cba6f7;
+ border-radius: 7px 7px 7px 7px;
+ padding-left: 4px;
+ margin-left:  5px;
+ margin-right: 5px;
+}
+
+#cpu {
+    color: #ffffff;
+    margin-left: 8px;
+    margin-right: 5px;
+}
+
+#memory {
+    color: #89b4fa;
+    padding-right: 0px;
+}
+
+#disk {
+    color: #a6e3a1;
+    padding-left: 0px;
+}
+
+
 #bluetooth {
-  background: inherit;
-  border: none;
-  color: #000A60;
-  margin-top: 4px;
+  color: #89b4fa;
+  border-radius: 7px 7px 7px 7px;
+  margin-left: 5px;
+  margin-right: 5px;
 } 
 
 #pulseaudio {
-  background: inherit;
-  border: none;
-  color: #000A60;
+  color: #89b4fa;
+  border-radius: 7px 0px 0px 7px;
   margin-right: 0px;
-  margin-top: 4px;
 }
 
 #pulseaudio.microphone {
     color: #cba6f7;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 0px 7px 7px 0px;
     margin-left: 0px;
 }
 
 #battery {
-    background: inherit;
-    border: none;
-    color: #000A60;
+    color: #a6e3a1;
     padding-right: 16px;
-    padding-top: 2px;
-    margin-left: -5px;
-}
-
-#memory {
-    background: inherit;
-    border: none;
-    color: #000A60;
-    margin-right: 1px;
-    border-radius: 0px 0px 0px 0px;
-}
-
-#disk {
-    background: inherit;
-    border: none;
-    color: #000A60;
-    margin-left: -8px;
-}
-
-#cpu {
-    background: inherit;
-    color: #000A60;
-    border: none;
-    padding-right: 3px;
-    padding-left: 10px;
-}
-
-#hardware {
-    background: #bfdeec;
-    border: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    border-color: #00f0ff;
-    color: #a6e3a1;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom: 19px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-#system_status {
-    background: #bfdeec;
-    border: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    border-color: #00f0ff;
-    margin-top: 5px;
-    margin-bottom: 19px;
-    padding-top: 0px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 0px;
-}
-
-#tray {
-    border: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    border-color: #00f0ff;
-    color: #a6e3a1;
-    margin-top: 2px;
-    margin-bottom: 19px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-#temperature {
-    background: inherit;
-    border: solid;
-    border-width: 1px;
-    border-color: #00f0ff;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-top: 3px;
-    margin-bottom:3px;
-}
-
-#battery.charging {
-  background-color:           inherit;
-  color:                      #000A60;
-  padding-right: 0px;
-  animation-name:             blink;
-  animation-duration:         0.4s;
-  animation-timing-function:  linear;
-  animation-iteration-count:  infinite;
-  animation-direction:        alternate;
 }
 
 #battery.critical:not(.charging) {
   background-color:           #F53C3C;
   color:                      #EEEEEE;
   animation-name:             blink;
-  animation-duration:         0.4s;
+  animation-duration:         0.5s;
   animation-timing-function:  linear;
   animation-iteration-count:  infinite;
   animation-direction:        alternate;
+}
+
+#hardware {
+    background: #000000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    margin-left: 7px;
+    margin-right: 5px;
+}
+
+#system_status {
+    background: #000000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 7px;
 }
