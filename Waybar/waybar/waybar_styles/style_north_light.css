@@ -1,14 +1,11 @@
 /* ############################################################################################################ */
 
 * {
-    border: None;
-    border-radius: 20px;
-    /*font-family: "NotoSans";*/
+    border: none;
     font-family: "JetBrainsMono Nerd Font Bold";
     font-weight: bold;
     font-size: 14px;
     min-height: 0px;
-    margin-bottom: 0px;
 }
 
 window#waybar {
@@ -18,10 +15,11 @@ window#waybar {
 
 tooltip {
     background: #000000;
-    border-radius: 10px;
-    border-width: 2.5px;
+    border-radius: 7px;
+    border-width: 2px;
     border-style: solid;
-    border-color: #8aadf4;
+    padding-bottom: 0px;
+    border-color: #ffffff;
 }
 
 #workspaces button {
@@ -42,17 +40,21 @@ tooltip {
 }
 
 #workspaces button.urgent {
-    color: #11111b;
-    background: #a6e3a1;
-    border-radius: 10px;
-    }
-
-#workspaces button:hover {
-    background: inherit;
-    color: #fff700;
+    color: #ffffff;
+    background: #ff0000;
     border-radius: 5px;
     padding-left: 5px;
-    margin-right: 5px;
+    padding-right: 9px;
+    animation-name: blink;
+    animation-duration: 0.5s;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+    /*padding-left: 5px;
+    margin-right: 5px;*/
 }
 
 window#waybar.empty #window {
@@ -60,7 +62,7 @@ window#waybar.empty #window {
     border: None;
 }
 
-#taskbar.empty #taskbar {
+taskbar#taskbar.empty #taskbar {
     background-color: transparent;
     border: None;
 }
@@ -109,7 +111,7 @@ window#waybar.empty #window {
     margin-left: 5px;
 }
 
-#custom-music.Playing {
+/*#custom-music.Playing {
     background: rgb(137, 180, 250);
     background: radial-gradient(circle, rgba(137, 180, 250, 120) 0%, rgba(142, 179, 250, 120) 6%, rgba(148, 226, 213, 1) 14%, rgba(147, 178, 250, 1) 14%, rgba(155, 176, 249, 1) 18%, rgba(245, 194, 231, 1) 28%, rgba(158, 175, 249, 1) 28%, rgba(181, 170, 248, 1) 58%, rgba(205, 214, 244, 1) 69%, rgba(186, 169, 248, 1) 69%, rgba(195, 167, 247, 1) 72%, rgba(137, 220, 235, 1) 73%, rgba(198, 167, 247, 1) 78%, rgba(203, 166, 247, 1) 100%);
     background-size: 400% 400%;
@@ -117,7 +119,7 @@ window#waybar.empty #window {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
     font-weight: bold;
     color: #fff;
-}
+}*/
 
 #custom-music.Paused,
 #custom-music.Stopped {
@@ -152,7 +154,7 @@ window#waybar.empty #window {
     border: solid;
     border-width: 1px;
     border-color: #00f0ff;
-    color: #000000;
+    color: #000A60;
     border-radius: 20px;
     margin-bottom: 19px;
     margin-top: 6px;
@@ -304,7 +306,7 @@ window#waybar.empty #window {
 }
 
 #cpu {
-    background: inherit;
+    background: shade(alpha(@inherit, 0.5), 0.2);
     color: #000A60;
     border: none;
     padding-right: 3px;
@@ -374,10 +376,15 @@ window#waybar.empty #window {
 }
 
 #battery.critical:not(.charging) {
-  background-color:           #F53C3C;
-  color:                      #EEEEEE;
+  background-color:           #ff0000;
+  color:                      #ffffff;
+  border-radius: 	      5px;
+  margin-top: 		      0px;
+  margin-bottom: 	      0px;
+  padding-right: 	      18px;
+  margin-left:		      3px;
   animation-name:             blink;
-  animation-duration:         0.4s;
+  animation-duration:         0.5s;
   animation-timing-function:  linear;
   animation-iteration-count:  infinite;
   animation-direction:        alternate;
