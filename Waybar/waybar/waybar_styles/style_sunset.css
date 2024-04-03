@@ -1,10 +1,9 @@
 * {
     border: none;
     border-radius: 7px;
-    font-family: "Noto Serif Display";
-    font-style: italic;
+    font-family: "Serif";
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     min-height: 0;
 }
 
@@ -12,16 +11,6 @@ window#waybar {
     background: rgba(21, 18, 27, 0);
     color: #cdd6f4;
 }
-window#waybar.empty #window {
-    background: transparent;
-    border: None;
-}
-
-taskbar#taskbar.empty #taskbar {
-    background-color: transparent;
-    border: None;
-}
-
 
 tooltip {
     background: #000000;
@@ -36,14 +25,14 @@ tooltip {
 }
 
 #workspaces button {
-    color: #ffffff;
+    color: #ff70a2;
     margin-right: 5px;
     padding-right: 0px;
     padding-left: 2px;
 }
 
 #workspaces button.active {
-    color: #ffffff;
+    color: #ff006f;
 }
 
 #workspaces button.focused {
@@ -64,7 +53,7 @@ tooltip {
 
 #workspaces button:hover {
     background: inherit;
-    color: #ff0000;
+    color: #ffffff;
     border-radius: 7px;
     padding-left: 6px;
     padding-right: 10px;
@@ -91,10 +80,8 @@ window#waybar.empty #window {
 #disk,
 #backlight,
 
-
-
 #backlight {
-    background: #000000;
+    background: inherit;
     opacity: 1.0;
     padding: 1.5px 7px 1.5px 7px;
     margin-top: 5px;
@@ -105,10 +92,10 @@ window#waybar.empty #window {
 }
 
 #custom-appmenu {
-    background: linear-gradient(52deg, rgba(148,226,213,1) 0%, rgba(137,220,235,1) 19%, rgba(116,199,236,1) 43%, rgba(137,180,250,1) 56%, rgba(180,190,254,1) 80%, rgba(186,187,241,1) 100%);
+    background: inherit;
     border-radius: 7px;
-    color: #fffFFF;
-    font-size: 18px;
+    color: #268FFF;
+    font-size: 19px;
     margin-left: 5px;
     padding-right: 14px;
     padding-left: 8px;
@@ -117,13 +104,13 @@ window#waybar.empty #window {
 }
 
 #taskbar {
-    background: linear-gradient(52deg, rgba(148,226,213,1) 0%, rgba(137,220,235,1) 19%, rgba(116,199,236,1) 43%, rgba(137,180,250,1) 56%, rgba(180,190,254,1) 80%, rgba(186,187,241,1) 100%);
+    background: inherit;
     border-radius: 7px;
-    margin-right: 7px;
+    margin-right: 4px;
     margin-left: 0px;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 5px;
+    font-size: 4px;
 }
 
 #tray {
@@ -133,41 +120,32 @@ window#waybar.empty #window {
 }
 
 #workspaces {
-    background: linear-gradient(52deg, rgba(148,226,213,1) 0%, rgba(137,220,235,1) 19%, rgba(116,199,236,1) 43%, rgba(137,180,250,1) 56%, rgba(180,190,254,1) 80%, rgba(186,187,241,1) 100%);
+    background: inherit;
     border-radius: 7px;
-    margin-left: 7px;
-    margin-right: 8px;
-    padding-right: 7px;
+    margin-left: 3px;
+    margin-right: 2px;
+    padding-right: 2px;
 }
 
 #window {
-    background: linear-gradient(52deg, rgba(148,226,213,1) 0%, rgba(137,220,235,1) 19%, rgba(116,199,236,1) 43%, rgba(137,180,250,1) 56%, rgba(180,190,254,1) 80%, rgba(186,187,241,1) 100%);
-    color: #ffffff;
+    background: inherit;
+    color: #ffbb6e;
     border-radius: 7px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-window#waybar.empty {
-    background-color: transparent;
-}
-
-window#waybar.hidden {
-    opacity: 0.2;
-}
-
 #clock {
-    background: linear-gradient(52deg, rgba(148,226,213,1) 0%, rgba(137,220,235,1) 19%, rgba(116,199,236,1) 43%, rgba(137,180,250,1) 56%, rgba(180,190,254,1) 80%, rgba(186,187,241,1) 100%);
-    color: #ffffff;
+    background: inherit;
+    color: #fff891;
     border-radius: 7px 7px 7px 7px;
     margin-right: 3px;
-    margin-left: 3px;
+    margin-left: 1px;
     padding-right: 3px;
 }
 
 #network {
-    background: inherit;
-    color: #ffffff;
+    color: #00ffd9;
     margin-right: 5px;
     margin-left: -5px;
 }
@@ -208,7 +186,7 @@ window#waybar.hidden {
 }
 
 #custom-media {
-    background: linear-gradient(52deg, rgba(148,226,213,1) 0%, rgba(137,220,235,1) 19%, rgba(116,199,236,1) 43%, rgba(137,180,250,1) 56%, rgba(180,190,254,1) 80%, rgba(186,187,241,1) 100%);
+    background: inherit;
     color: #ffffff;
     border-radius: 7px;
     margin-top: 5px;
@@ -227,25 +205,28 @@ window#waybar.hidden {
 }
 
 #cpu {
-    color: #ffffff;
+    background: inherit;
+    color: #ff7070;
     margin-left: 8px;
     margin-right: 5px;
 }
 
 #memory {
     background: inherit;
+    color: #ff70a2;
     padding-right: 0px;
 }
 
 #disk {
     background: inherit;
+    color: #ffbb6e;
     padding-left: 0px;
 }
 
 
 #bluetooth {
   background: inherit;
-  color: #ffffff;
+  color: #89b4fa;
   border-radius: 7px;
   margin-left: 5px;
   margin-right: 5px;
@@ -253,7 +234,7 @@ window#waybar.hidden {
 
 #pulseaudio {
   background: inherit;
-  color: #ffffff;
+  color: #7598ff;
   border-radius: 7px 0px 0px 7px;
   margin-right: 0px;
 }
@@ -265,8 +246,8 @@ window#waybar.hidden {
 }
 
 #battery {
-    background: transparent;
-    color: #a6e3a1;
+    background: inherit;
+    color: #da8aff;
     padding-right: 16px;
     margin-left: 0px;
 }
@@ -297,33 +278,18 @@ window#waybar.hidden {
 }
 
 #hardware {
-    background: linear-gradient(52deg, rgba(148,226,213,1) 0%, rgba(137,220,235,1) 19%, rgba(116,199,236,1) 43%, rgba(137,180,250,1) 56%, rgba(180,190,254,1) 80%, rgba(186,187,241,1) 100%);
-    font-weight: bolder;
-    color: #fff;
-    animation: gradient 15s ease infinite;
+    background: inherit;
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 7px;
-    margin-left: 7px;
-    margin-right: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #system_status {
-    background: linear-gradient(52deg, rgba(148,226,213,1) 0%, rgba(137,220,235,1) 19%, rgba(116,199,236,1) 43%, rgba(137,180,250,1) 56%, rgba(180,190,254,1) 80%, rgba(186,187,241,1) 100%);
-    animation: gradient 15s ease infinite;
+    background: inherit;
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 7px;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 30%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    margin-right: 0px;
 }
