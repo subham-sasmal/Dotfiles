@@ -9,12 +9,7 @@ then
 	swww init
 fi
 
-#swww clear-cache
-
-IMG_DAVIDLUCY="davidxlucy"
-IMG_YELAN="yelan"
-IMG_DITF="DITF"
-IMG="northlight"
+IMG="pixel_city"
 
 if [ -z "$1" ]
 then
@@ -26,7 +21,9 @@ fi
 WALLPAPER="${DIR}/${IMG}.jpg"
 echo "$WALLPAPER"
 
-swww img --resize fit --transition-duration 3 --transition-angle 45 --transition-fps 30 --transition-type any ${DIR}/${IMG}.jpg
+swww img --transition-duration 3 --transition-angle 90 --transition-fps 165 --transition-type any ${DIR}/${IMG}.jpg
+
+#swww img --resize fit --transition-duration 3 --transition-angle 45 --transition-fps 30 --transition-type any ${DIR}/${IMG}.jpg
 
 if [ $? -ne 0 ]
 then

@@ -10,7 +10,7 @@ Programs to install:
 
 Applications to install:
 	1. Strawberry -> Mediaplayer
-	2. Google-chrome -> Web Browser (If you download Chromium, you will need to alter some lines in the config files to achieve the same behaviour as every other program)
+	2. Google-chrome -> Web Browser (If you download Chromium, you will need to alter some lines in the hyprland config files to achieve the same behaviour as every other program)
 		
 Issues:
 	1. If Alt+F1/F2/F3 is not working for controlling the volume output, check if amixer is present in /usr/bin/ or not. If is not present then download amixer and if amixer is not available to download, download something similar to amixer like pamixer and replace amixer with pamixer in the key binding section of hyprland config.
@@ -20,6 +20,7 @@ Icons and Themes:
 	1. Install yaru icon theme using: "pamac search yaru" -> To search for the package, if available then download: "pamac install yaru-icon-theme"
 	2. Install catppuccin widgets themes using: "pamac search catppuccin-gtk" and download the theme you like. To see the screenshots of different widgets themes visit the catppuccin github
 	3. Install a modern cursor theme using: "pamac search bibata-cursor" and install using: "pamac install bibata-cursor-theme"
+	4. Make sure to have "terminus" font installed for waybar_style_pixel_city to work properly
 
 	After installing your widgets, icons, and cursor themes, open nwg-look (GTK-Settings) to apply the themes.
 ------------------------------------------------------ !! ENJOY !! ------------------------------------------------------
